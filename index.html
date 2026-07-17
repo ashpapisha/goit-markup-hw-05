@@ -7,8 +7,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./css/styles.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -17,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -442,45 +440,61 @@
         </div>
 
         <div class="footer-social-block">
-          <p class="footer-social-title">Social media</p>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.instagram.com/">
-                <svg class="footer-social-icon" width="24" height="24">
+          <p class="footer-social-title">Social Media</p>
+          <ul class="footer-soc-list">
+            <li class="footer-soc-item">
+              <a class="footer-soc-link" href="https://www.instagram.com/">
+                <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="https://twitter.com/">
-                <svg class="footer-social-icon" width="24" height="24">
+            <li class="footer-soc-item">
+              <a class="footer-soc-link" href="https://twitter.com/">
+                <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.facebook.com/">
-                <svg class="footer-social-icon" width="24" height="24">
+            <li class="footer-soc-item">
+              <a class="footer-soc-link" href="https://www.facebook.com/">
+                <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.linkedin.com/">
-                <svg class="footer-social-icon" width="24" height="24">
+            <li class="footer-soc-item">
+              <a class="footer-soc-link" href="https://www.linkedin.com/">
+                <svg class="footer-soc-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe-block">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <input
+              type="email"
+              name="email"
+              class="footer-subscribe-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <!-- Бекдроп -->
-    <div class="backdrop is-open">
-      <!-- Модальне вікно -->
+
+    <div class="backdrop is-open" id="modal">
       <div class="modal">
-        <!-- Тут буде кнопка закриття та форма -->
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
@@ -502,7 +516,6 @@
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
-            ''
           </div>
           <div class="form-field">
             <label for="user-phone" class="form-label">Phone</label>
