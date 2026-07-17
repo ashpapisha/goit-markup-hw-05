@@ -1,0 +1,55 @@
+/* common.css */
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2e2f42;
+    --accent-color: #4d5ae5;
+    --white-color: #ffffff;
+}
+
+/* 1. Глобальне скидання margin для заголовків та абзаців (вимога перевірки) */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 2. Утилітарний клас sr-only для доступності */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
