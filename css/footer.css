@@ -6,12 +6,13 @@
 
 .footer-container {
     display: flex;
-    /* Виправлено: align-items: flex-start замість baseline */
-    align-items: flex-start;
+    align-items: baseline;
+    gap: 120px;
+    /* Відступи між блоками задаються тут */
 }
 
 .footer-info-block {
-    margin-right: 120px;
+    max-width: 264px;
 }
 
 .footer-logo {
@@ -31,12 +32,12 @@
 }
 
 .footer-text {
-    max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
 
+/* Social media block */
 .footer-social-title {
     margin-bottom: 16px;
     font-weight: 500;
@@ -69,4 +70,67 @@
 
 .footer-social-icon {
     fill: #f4f4fd;
+}
+
+/* Subscribe block */
+.footer-subscribe-block {
+    margin-left: auto;
+    /* Притискає блок до правого краю */
+}
+
+.footer-subscribe-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-input {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background-color: #404bbf;
+}
+
+.footer-subscribe-icon {
+    margin-left: 16px;
+    fill: #ffffff;
 }
